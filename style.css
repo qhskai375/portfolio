@@ -23,12 +23,22 @@ li{
     background-size: cover;
 
     color: white;
+    margin-top: -50px;
+    padding-top: 100px;
 }
 .header{
+    width: 100%;
     height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.active{
+    background: #3d3d3d;
+    opacity: 0.5;
 }
 .logo{
     width: 200px;
@@ -231,4 +241,168 @@ li{
     background-size: cover;
 
     background-attachment: fixed;
+}
+.project{
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    margin-top: 200px;
+    position: relative;
+}
+.project h3{
+    color: #ff6a6a;
+    font-size: 30px;
+}
+.project h2{
+    font-size: 50px;
+}
+.item{
+    width: 600px;
+    height: 200px;
+    border: 1px solid #ccc;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    margin-bottom: 30px;
+    background-color: white;
+    color: black;
+}
+.item:hover{
+    background-color: rgb(0, 214, 214);
+    color: white;
+}
+.item:hover .detail{
+    background: white;
+    color: rgb(80, 80, 80);
+}
+.modal1, .modal2, .modal3{
+    border: 1px solid black;
+    width: 800px;
+    height: 500px;
+
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    z-index: 1;
+    font-size: 20px;
+    padding: 25px;
+    background: white;
+    display: none;
+}
+.modal1 button, .modal2 button, .modal3 button{
+    position: absolute;
+    right: 30px;
+    bottom: 70px;
+    width: 100px;
+    height: 30px;
+}
+.item-img{
+    width: 200px;
+    height: 200px;
+}
+.item-img img{
+    width: 200px;
+    height: 200px;
+}
+.item-text{
+    width: 400px;
+    height: 200px;
+
+    padding: 20px;
+    position: relative;
+}
+.detail{
+    width: 80px;
+    height: 35px;
+    padding: 5px;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+
+    background-color: #00d6d6;
+    color: white;
+    border: 1px solid #ccc;
+}
+.contact{
+    height: 700px;
+    background-color: #eee;
+
+    margin-top: 100px;
+    padding-top: 50px;
+}
+.contact-inner{
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+}
+.contact-inner h3{
+    color: #ff6a6a;
+    font-size: 30px;
+}
+.contact-inner h3{
+    font-size: 50px;
+}
+.box{
+    width: 1200px;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.box .left{
+    width: 250px;
+    height: 450px;
+}
+.box .right{
+    width: 800px;
+    height: 450px;
+}
+.info{
+    width: 250px;
+    height: 100px;
+    background-color: #cdffff88;
+
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid #00d6d6;
+}
+.info h5{
+    font-size: 20px;
+}
+.memo{
+    width: 800px;
+    height: 40px;
+
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.memo h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.memo input{
+    width: 750px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.memo textarea{
+    width: 750px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.right button{
+    display: block;
+    margin-left: 50px;
+    margin-top: 150px;
+    width: 750px;
+    height: 30px;
+    background: #00d6d6;
+    border: none;
+    border-radius: 15px;
 }
